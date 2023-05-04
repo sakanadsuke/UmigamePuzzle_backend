@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+
+5.times do |n|
+  riddle = Riddle.create!({ content: "a#{n+1}", answer: "b#{n+1}"})
+end
