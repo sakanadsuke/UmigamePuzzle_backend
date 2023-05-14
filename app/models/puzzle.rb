@@ -1,7 +1,6 @@
-class Riddle < ApplicationRecord
+class puzzle < ApplicationRecord
   serialize :yes_no_examples, Array
   serialize :score_examples, Array
-  validates :title, length: {maximum: 400}, presence: true
   validates :content, length: {maximum: 400}, presence: true
   validates :answer, length: {maximum: 400}, presence: true
   validates :yes_no_examples, length: {maximum: 400}

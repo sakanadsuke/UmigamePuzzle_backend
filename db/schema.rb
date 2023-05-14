@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_04_113425) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_14_101936) do
   create_table "riddles", force: :cascade do |t|
     t.string "content"
     t.string "answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "yes_no_examples"
+    t.string "score_examples"
+    t.string "title"
   end
 
 end
