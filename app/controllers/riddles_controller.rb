@@ -13,6 +13,12 @@ class RiddlesController < ApplicationController
     render json: @riddle
   end
 
+  def info
+    @riddles =  Riddle.select("title", "id")
+
+    render json: @riddles
+  end
+
   # POST /riddles
   def create
     @riddle = Riddle.new(riddle_params)
